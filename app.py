@@ -124,16 +124,15 @@ if uploaded_file is not None:
         "audio/wav"
     )
 
-st.header("📓 Full Colab Notebook")
-# Colab linkinizi buraya koyun (public yapın)
-colab_url = "https://colab.research.google.com/drive/YOUR_NOTEBOOK_ID"
-colab_iframe(colab_url)
+st.success("✅ App is ready! Upload noisy WAV file → Download denoised version!")
 
-st.info("**requirements.txt:**\n```
-streamlit
-torch
-torchaudio
-librosa
-soundfile
-numpy
-```")
+st.header("🚀 Deploy Information")
+st.info("Add repo `requirements.txt`:\n\n"
+        "`streamlit\n"
+        "torch\n"
+        "torchaudio\n"
+        "librosa\n"
+        "soundfile\n"
+        "numpy`")
+
+st.markdown("[Streamlit Deploy Guide](https://docs.streamlit.io/streamlit-community-cloud/get-started)")
